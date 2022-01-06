@@ -174,15 +174,15 @@ func savePolicyLine(ptype string, rule []string) CasbinRule {
 
 // SavePolicy saves policy to database.
 func (a *Adapter) SavePolicy(model model.Model) error {
-	err := a.dropTable()
-	if err != nil {
-		return err
-	}
+// 	err := a.dropTable()
+// 	if err != nil {
+// 		return err
+// 	}
 
-	err = a.createTable()
-	if err != nil {
-		return err
-	}
+// 	err = a.createTable()
+// 	if err != nil {
+// 		return err
+// 	}
 
 	var lines []CasbinRule
 
