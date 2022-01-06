@@ -200,7 +200,7 @@ func (a *Adapter) SavePolicy(model model.Model) error {
 		}
 	}
 
-	_, err = a.o.InsertMulti(len(lines), lines)
+	_, err := a.o.InsertMulti(len(lines), lines)
 	return err
 }
 
